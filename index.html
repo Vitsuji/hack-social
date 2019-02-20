@@ -20,7 +20,7 @@
       <label>Value 2</label>
       <input type="range" min="1" max="100" value="50" class="slider cherry" id="val2">
       <label>Value 3</label>
-      <input type="range" min="1" max="100" value="50" class="slider brown" val="val3">
+      <input type="range" min="1" max="100" value="50" class="slider brown" id="val3">
     </div>
   </div>
 </body>
@@ -33,11 +33,11 @@
       $('.slider').change(function () {
         let val1 = $("#val1").val()
         if(val1 > 50) {
-          $('#display').attr('src', 'img/red.jpeg');
+          $('#display').attr('src', 'img/fat_man.jpg');
         }else if (val1 == 50) {
-          $('#display').attr('src', 'img/default.jpeg');
+          $('#display').attr('src', 'img/normal_person.jfif');
         }else {
-          $('#display').attr('src', 'img/blue.jpeg');
+          $('#display').attr('src', 'img/thin_person.png');
         }
       })
     })
