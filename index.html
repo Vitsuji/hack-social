@@ -38,7 +38,18 @@
           $('#display').attr('src', 'img/normal_person.jfif');
         }else {
           $('#display').attr('src', 'img/thin_person.png');
-        }
+		  
+        }	
+
+		var val2 = $("#val2").val()
+		console.log(val2);
+        if(val2 > 50) {
+          $('#display').attr('src', "img/Shaggy.jpg");
+        }else if (val2 == 50) {
+          $('#display').attr('src', 'img/normal_person.jfif');
+        }else {
+          $('#display').attr('src', 'img/tiredman.png');
+        }		
       })
     })
 
