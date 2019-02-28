@@ -1,0 +1,7 @@
+if the guy eats a 100 fast food and 100 vegtables and does a 100 sport,the sliders cancell out to 50.(normal dude)
+if the guy eats a 100 fast food and 0 of vegtables and does a 100, the sliders are about 70.(fattish dude) 
+if the guy eats a 100 fast food and 0 vegtables and does 0 sport, the sliders are at at 100. (fat dude)
+if the guy 0 fast food and 100 vegtables and 100 sport, the sliders are at close to zero. (fit dude)
+if the guy 0 fast food and 0 vegtables and does 100 of sport, the sliders are at zero. (dead dude)
+if the guy 0 fast food and 0 vegtables and does 0 sport, the sliders are at close to zero. (thin dude)
+
