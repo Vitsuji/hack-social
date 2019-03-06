@@ -31,18 +31,17 @@
   <script>
     $( document ).ready(function() {
       $('.slider').change(function () {
-        let val1 = $("#val1").val()
+	  /*
+        
         if(val1 > 50) {
           $('#display').attr('src', 'img/fat_man.jpg');
         }else if (val1 == 50) {
           $('#display').attr('src', 'img/default_person.png');
         }else {
           $('#display').attr('src', 'img/thin_person.png');
-		  
         }	
 
-		var val2 = $("#val2").val()
-		console.log(val2);
+		
         if(val2 > 50) {
           $('#display').attr('src', "img/Shaggy.jpg");
         }else if (val2 == 50) {
@@ -51,15 +50,24 @@
           $('#display').attr('src', 'img/tiredman.png');
         }			
 		
-		var val3 = $("#val3").val()
-		console.log(val3);
+		
         if(val3 > 50) {
           $('#display').attr('src', 'img/buff_person 2.png');
         }else if (val3 == 50) {
           $('#display').attr('src', 'img/default_person.png');
         }else {
           $('#display').attr('src', 'img/fat_person.png');
-        }		
+        }	*/
+
+
+		let vegetables = $("#val2").val()
+		let fast_food = $("#val1").val()
+		let sport = $("#val3").val()
+		
+		if (fast_food == 100 && vegetables == 100 && sport == 100 ) {
+			$('#display').attr('src', 'img/default_person.png');
+		}
+		
       })
     })
 
