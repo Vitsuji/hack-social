@@ -9,10 +9,10 @@
   <script src="main.js"></script>
 </head>
 <body>
-  <h1>My name Jeff</h1>
+  <h1>Body Image</h1>
   <div class="flex_container">
   <div class="flex_item">
-      <img id="display" src="img/default.jpeg">
+      <img id="display" src="img/normal_person.jfif">
     </div>
     <div class="flex_item slidercontainer">
       <label>Fast Food</label>
@@ -31,6 +31,7 @@
   <script>
     $( document ).ready(function() {
       $('.slider').change(function () {
+		$("#display").fadeOut()
 	  /*
         
         if(val1 > 50) {
@@ -67,7 +68,8 @@
 		if (fast_food == 100 && vegetables == 100 && sport == 100 ) {
 			$('#display').attr('src', 'img/default_person.png');
 		}
-		
+		$("#display").fadeIn()
+
       })
     })
 
