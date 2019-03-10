@@ -67,9 +67,13 @@
 		
 		if (fast_food == 100 && vegetables == 100 && sport == 100 ) {
 			$('#display').attr('src', 'img/default_person.png');
+    }
+    if (fast_food == 1 && vegetables == 100 && sport == 100 ) {
+      $('#display').attr('src', 'img/buff_person.jpg');
+      console.log('hey')
 		}
 		$("#display").fadeIn()
-
+    console.log(sport)
       })
     })
 
