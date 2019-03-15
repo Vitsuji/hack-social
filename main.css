@@ -10,9 +10,6 @@ font-size: 100px;
 font-weight: 600;
 }
 
-
-
-
 /* Flex Layout */
 .flex_container {
   display: flex;
@@ -162,3 +159,4 @@ body {
   background-color: white;
   color: black;
 }
+
