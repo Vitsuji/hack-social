@@ -38,7 +38,7 @@ body {
 /* Label Styles */
 .flex_item label {
   padding: 0 50px;
-  font-size: 20px;
+  font-size: 40px;
   color:#a0a0a0;
 }
 /* SLider Styles */
@@ -67,7 +67,7 @@ body {
   appearance: none;
   width: 25px;
   height: 25px;
-  border-radius: 50%;
+  border-radius: 100%;
   background: #4CAF50;
   cursor: pointer;
 }
@@ -75,8 +75,8 @@ body {
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
+  border-radius: 100%;
+  background: rgb(234, 241, 234);
   cursor: pointer;
 }
 .green::-webkit-slider-thumb {
@@ -95,5 +95,42 @@ body {
   background: #7a7a7a;
   cursor: pointer;
 }
-#display{
-	width: 
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

@@ -15,7 +15,7 @@
       <img id="display" src="img/normal_person.jfif">
     </div>
     <div class="flex_item slidercontainer">
-      <label>Fast Food</label>
+      <label id="label">Fast Food</label>
       <input type="range" min="1" max="100" value="50" class="slider green" id="val1">
       <label>Vegetables and Fruit</label>
       <input type="range" min="1" max="100" value="50" class="slider cherry" id="val2">
@@ -64,26 +64,26 @@
         }	
 
 
-		let vegetables = $("#val2").val()
-		let fast_food = $("#val1").val()
-		let sport = $("#val3").val()
+		let vf = $("#val2").val()
+		let ff = $("#val1").val()
+		let e = $("#val3").val()
 		
-		if (fast_food == 100 && vegetables == 100 && sport == 100 ) {
+		if (ff <= 100 && ff >= 80 && vf <= 100 && vf >= 80 && e <= 100 && e >= 80) {
 			$('#display').attr('src', 'img/default_person.png');
     }
-    if (fast_food == 1 && vegetables == 100 && sport == 100 ) {
+    if (ff >= 1 && ff <= 20 && vf <= 100 && vf >= 80 && e <= 100 && e >= 80) {
       $('#display').attr('src', 'img/buff_person.jpg');
       console.log('hey')
 		}
 		
-		if (fast_food == 100 && vegetables == 1 && sport == 100 ) {
+		if (ff <= 100 && ff >= 80 && vf >= 1 && vf <= 20 && e <= 100 && e >= 80) {
 			$('#display').attr('src', 'img/fat_person.png');
 		}
 	
-		if (fast_food == 100 && vegetables == 1 && sport == 1) {
+		if (ff <= 100 && ff >= 80 && vf >= 1 && vf <= 20 && e >= 1 && e <= 20) {
 			$('#display').attr('src' , 'img/fat_person.png'); 
     }
-    if (fast_food == 1 && vegetables == 50 && sport == 50) {
+    if (ff >= 1 && ff <= 20 && vf >= 50 && vf >= 40 && vf <= 60 && e >= 50 && e >= 40 && e <=60) {
 			$('#display').attr('src' , 'img/defaul_person.jfif'); 
     }
 		$("#display").fadeIn();
