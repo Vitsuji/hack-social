@@ -29,7 +29,7 @@ body {
 /* Display Settings */
 .flex_item img {
   /* width: -webkit-fill-available; */
-  width: 250px;
+  width: 400px;
   padding: 25px;
 }
 
@@ -144,7 +144,7 @@ body {
   top: 40px;
   display: inline-block;
   font-size: 16px;
-  margin: 10px 10px;
+  margin: 20px 20px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
