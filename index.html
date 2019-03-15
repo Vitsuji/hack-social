@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Social Hackathon</title>
+  <title>Body Image</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <script src="main.js"></script>
 </head>
 <body>
-  <h1>My name Jeff</h1>
+   <a>Body Image</a>
+   
+ <b>By Radman, Ola, Maxim</b>
   <div class="flex_container">
   <div class="flex_item">
-      <img id="display" src="img/default.jpeg">
+      <img id="display" src="img/normal_person.jfif">
     </div>
     <div class="flex_item slidercontainer">
       <label>Fast Food</label>
@@ -25,13 +27,17 @@
   </div>
 </body>
 <script
+
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
   <script>
+  
+  
     $( document ).ready(function() {
       $('.slider').change(function () {
-	  /*
+		$("#display").fadeOut()
+	  
         
         if(val1 > 50) {
           $('#display').attr('src', 'img/fat_man.jpg');
@@ -57,7 +63,7 @@
           $('#display').attr('src', 'img/default_person.png');
         }else {
           $('#display').attr('src', 'img/fat_person.png');
-        }	*/
+        }	
 
 
 		let vegetables = $("#val2").val()
@@ -66,10 +72,26 @@
 		
 		if (fast_food == 100 && vegetables == 100 && sport == 100 ) {
 			$('#display').attr('src', 'img/default_person.png');
+    }
+    if (fast_food == 1 && vegetables == 100 && sport == 100 ) {
+      $('#display').attr('src', 'img/buff_person.jpg');
+      console.log('hey')
 		}
 		
+		if (fast_food == 100 && vegetables == 1 && sport == 100 ) {
+			$('#display').attr('src', 'img/fat_person.png');
+		}
+	
+		if (fast_food == 100 && vegetables == 1 && sport == 1) {
+			$('#display').attr('src' , 'img/fat_person.png'); 
+    }
+    if (fast_food == 1 && vegetables == 50 && sport == 50) {
+			$('#display').attr('src' , 'img/defaul_person.jfif'); 
+    }
+		$("#display").fadeIn();
+		
+    console.log(sport)
       })
-    })
-
+	 })
   </script>
 </html>
