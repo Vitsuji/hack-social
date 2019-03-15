@@ -134,3 +134,31 @@ body {
   font-size: 16px;
   padding: 16px 32px;
 }
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 30px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  top: 40px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 50px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button3 {
+  background-color: #474545; 
+  color: black; 
+  border: 2px solid #474545;
+}
+
+.button3:hover {
+  background-color: white;
+  color: black;
+}
