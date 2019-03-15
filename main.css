@@ -28,7 +28,8 @@ body {
 
 /* Display Settings */
 .flex_item img {
-  width: -webkit-fill-available;
+  /* width: -webkit-fill-available; */
+  width: 250px;
   padding: 25px;
 }
 
@@ -143,10 +144,9 @@ body {
   top: 40px;
   display: inline-block;
   font-size: 16px;
-  margin: 10px 50px;
+  margin: 10px 10px;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  cursor: pointer;
 }
 
 .button3 {
@@ -181,4 +181,9 @@ body {
   font-size: 20px;
   color: #7a7a7a;
   margin-top: 50px;
+}
+
+.flex_container_halal {
+  display: flex;
+  flex-direction: row;
 }
