@@ -170,20 +170,34 @@ body {
   font-size: 60px;
   color: #7a7a7a;
 }
+/*
 .desc-ff {
   font-size: 20px;
   color: #7a7a7a;
   width: 1000px;
   margin-left: 100px;
 }
-
-.effect-ff {
+*/
+.factors {
   font-size: 20px;
   color: #7a7a7a;
-  margin-top: 50px;
+  width: 80%;
+  margin: 0 auto
 }
 
 .flex_container_halal {
   display: flex;
   flex-direction: row;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.showmustgoon {
+  margin-right: 200px;
 }
