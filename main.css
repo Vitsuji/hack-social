@@ -206,3 +206,9 @@ body {
   padding: 40px;
   margin: 0 auto;
 }
+
+#appeal {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
