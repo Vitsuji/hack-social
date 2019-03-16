@@ -18,7 +18,7 @@ font-weight: 600;
 
 /* Back ground settings */
 body {
-  background-color:#161616;
+  background-color:#182825;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -169,7 +169,7 @@ body {
 
 #title {
   font-size: 60px;
-  color: #7a7a7a;
+  color: white;
 }
 /*
 .desc-ff {
@@ -181,7 +181,7 @@ body {
 */
 .factors {
   font-size: 20px;
-  color: #7a7a7a;
+  color: white;
   margin: 0 auto
 }
 
