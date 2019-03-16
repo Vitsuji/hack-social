@@ -19,6 +19,7 @@ font-weight: 600;
 /* Back ground settings */
 body {
   background-color:#161616;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .flex_item {
@@ -181,7 +182,6 @@ body {
 .factors {
   font-size: 20px;
   color: #7a7a7a;
-  width: 80%;
   margin: 0 auto
 }
 
@@ -202,6 +202,7 @@ body {
   margin-right: 200px;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+.item {
+  padding: 40px;
+  margin: 0 auto;
 }
